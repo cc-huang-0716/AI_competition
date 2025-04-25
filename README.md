@@ -8,7 +8,7 @@
 ## Installation
 pip install torch-geometric "ray[tune]" wandb kafka-python python-dotenv
 
-## 🚀 Overview
+## Overview
 
 This project uses **PPO（Proximal Policy Optimization）** ，combines **Spatio-Temporal Actor（LSTM + GATv2）**，selects the important features,then uses **XGBoost classifier** to predict the price of the stock. **F1-score** is the reward 。
 
