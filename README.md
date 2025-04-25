@@ -35,22 +35,12 @@ Selected Features ──▶ XGBoost Classifier ──▶ Prediction
 
 | module name | function |
 |----------|------|
-| `load_data_partition()` 
-| `SpatioTemporalActor`   
-| `ppo_loss()`            
-| `xgb_predict()`        
-| `compute_reward()`      
-| `train()`               
-
----
-
-## Outputs
-
-| output file | illustration |
-|----------|------|
-| `reward_curve.png` 
-| `confusion_matrix.png` 
-| `Final F1-Score`（console）
+| `load_data_partition()` | Data Reading + Missing Processing + Standardization
+| `SpatioTemporalActor`   | SpatioTemporalActor feature selector: combining LSTM + GATv2
+| `ppo_loss()`            | ppo_loss() PPO loss function, stabilizing policy updates
+| `xgb_predict()`         | xgb_predict() XGBoost prediction using selected features
+| `compute_reward()`      | compute_reward() compute macro F1-score as reward
+| `train()`               | train() multiple rounds of reinforcement learning and XGBoost training
 
 ---
 
