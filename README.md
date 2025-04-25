@@ -1,4 +1,4 @@
-# 📊 PPO-GAT-XGBoost Feature Selector
+# PPO-GAT-XGBoost Feature Selector
 
 > Reinforcement Learning–based Feature Selection Framework for Stock Movement Prediction  
 > Powered by **PPO + GATv2 + XGBoost** and optimized for **F1-score**.
